@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gd_adminsystem</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="main-container">
+           
+
+            <div class="first-container">
+                <div class="nombre-user"> USUARIO: <span>Gladiator Admin Panel</span><br> ID: Not Online</div>
+                <div id="clockdate">
+                    <div class="clockdate-wrapper">
+                    <div id="clock"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-container">
+                <button class="boton" id="info">INFORMACIÓN</button>
+                <button class="boton" id="ban">INFO BAN</button>
+                <button class="boton" id="warn">INFO WARN</button>
+                <!-- <button class="boton" id="jail">INFO JAIL</button> -->
+                <button class="botoninvisible"></button>
+                <!-- <button class="boton" style="border-top: solid 1px rgb(186, 205, 215, 0.5);"id="robos">ROBOS</button> -->
+                <button class="boton" id="comandos">COMANDOS</button>
+                <!-- <button class="boton" id="docs">DOCS</button> DOCS: NORMATIVAS, ITEMS, TRABAJOS... -->
+            </div>
+
+            <div class="third-container">
+                <div class="imagen-deback"></div>
+                <div id="carga">
+                    <!-- <div class="box primer-box">
+                    👔 Nombre: <span class="textjus">Berbegal</span><br>
+                    🧩 Licencia: <span class="textjus">license:b0ddd4e19825318896486451e7a30f7c3bea71ec</span><br>
+                    🎠 Steam: <span class="textjus">steam:110000111cccff8</span><br>
+                    </div>
+                    <div class="box segundo-box">
+                        💬 Nombre Personaje: <span class="textjus">Víctor Berbegal</span><br>
+                        💨 Licencias: <span class="textjus">Teorico - Autoescula / Practico - Coche []</span><br>
+                        💠 Edad: <span class="textjus">18</span><br>
+                        💫 Nacimiento: <span class="textjus">2021-09-22</span><br>
+                        📱  Telefono: <span class="textjus">513485</span><br>
+                        🧱 Trabajo: <span class="textjus">Police : 0</span><br>
+                        💼 Mafia: <span class="textjus">N/A</span><br>
+                    </div>
+                    <div class="box tercer-box">
+                        📃 Banco: <span class="textjus">277858$</span><br>
+                        💵 Efectivo: <span class="textjus">0$</span><br>
+                        🧥 Negro: <span class="textjus">0$</span><br>
+                    </div>
+                    <div class="box cuarto-box">
+                        🔰  Grupo: <span class="textjus">GameMaster</span><br>
+                        📌 Permisos: <span class="textjus">0</span><br>
+                        🥇 GladiCoins: <span class="textjus">0</span><br>
+                    </div> -->
+
+                    <!-- <table class="tabla" >
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>RAZON</th>
+                                <th>ADMIN</th>
+                                <th>AÑADIDO</th>
+                                <th>EXPIRA</th>
+                                <th>PERMANENTE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>Test</td>
+                                <td>Berbegal</td>
+                                <td>Hoy</td>
+                                <td>Nunca</td>
+                                <td>Si</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>RAZON</th>
+                                <th>ADMIN</th>
+                                <th>AÑADIDO</th>
+                                <th>TIEMPO</th>
+                                <th>TERMINADO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>Test</td>
+                                <td>Berbegal</td>
+                                <td>Hoy</td>
+                                <td>60 min</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>RAZON</th>
+                                <th>ADMIN</th>
+                                <th>AÑADIDO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>Test</td>
+                                <td>Berbegal</td>
+                                <td>Hoy</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- <div id="container">
+            <div id="first">
+                USUARIO:
+            </div>
+            <br>
+            <hr>
+
+            <div class="left" id="segundo">
+                <button id="boton">INFO</button><br>
+                <button id="boton1">BANS</button><br>
+                <button id="boton2">WARN</button>
+                <button id="boton3">JAIL</button>
+            </div>
+            
+            <div class="right" id="tercero">
+
+                <div id="tabla1" style="display:none;">
+                    
+                </div>
+
+                <table id="tabla2" style="display:none;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ADMIN</th>
+                            <th scope="col">RAZON</th>
+                            <th scope="col">FECHA</th>
+                            <th scope="col">DURACION</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table id="tabla3" style="display:none;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ADMIN</th>
+                            <th scope="col">RAZON</th>
+                            <th scope="col">FECHA</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table id="tabla4" style="display:none;"> 
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ADMIN</th>
+                            <th scope="col">RAZON</th>
+                            <th scope="col">FECHA</th>
+                            <th scope="col">DURACION</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id='adv' style= 'display: none;'>
+                    <p style="margin-top:50px; text-align: center; color:rgba(239, 166, 10, 0.8);">EL TIEMPO RESTANTE DE LAS SANCIONES NO ESTA ACTUALIZADO</p>
+                </div>
+            </div>
+        </div> -->
+
+        
+<!-- 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body{
+    height:100%;
+    margin: 0%;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:rgba(90, 90, 91, 0.9); 
+    height: 90%;
+    width: 90%;
+    border-radius: 7px;
+}
+
+USUARIO DIV FIRST
+
+#first {
+    text-align: center;
+    color: rgba(239, 166, 10, 0.8);
+}
+
+#first text {
+    color: white;
+}
+
+BOTONES DIV
+
+#segundo {
+    float: left;
+    width: 15%;
+    height: 85%;
+    padding: 1%;
+    padding-top:1%;
+    border-right: solid #8c8c8c;
+}
+
+#boton {
+    background-color:  rgba(239, 166, 10, 0.8);
+    border: 0px solid;
+    border-radius:5px;
+    padding: 0%;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 5%;
+    color:white;
+}
+
+#boton1 {
+    background-color:  rgba(239, 166, 10, 0.8);
+    border: 0px solid;
+    border-radius:5px;
+    padding: 0%;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 5%;
+    color:white;
+}
+
+#boton2 {
+    background-color:  rgba(239, 166, 10, 0.8);
+    border: 0px solid;
+    border-radius:5px;
+    padding: 0%;
+    width: 100%;
+    height: 5%;
+    margin-bottom: 10px;
+    color:white;
+}
+
+#boton3 {
+    background-color:  rgba(239, 166, 10, 0.8);
+    border: 0px solid;
+    border-radius:5px;
+    padding: 0%;
+    width: 100%;
+    height: 5%;
+    color:white;
+}
+
+
+TERCERO DIV
+
+#tercero {
+    width: 82%;
+    height: 85%;
+    float: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 0px;
+}
+
+#tercero::-webkit-scrollbar {
+    width: 10px;
+    background-color: #222;
+}
+
+#tercero::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #444;
+}
+
+TERCERO LISTA GENERALES*/
+
+th {
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    color: white;
+}
+
+td {
+    background-color: rgba(220, 220, 220, 0.3);
+    text-align: center;
+    color: white;
+}
+
+TABLA 1
+
+#tabla1 {
+    text-align: center;
+    color:rgba(239, 166, 10, 0.8);
+}
+
+#tabla1 text {
+    color: white;
+}
+
+#tabla1 #nonne {
+    color: rgba(239, 166, 10, 0.8);
+}
+
+
+#press {
+    padding-top: 20px;
+}
+
+TABLA 2
+
+#tabla2 {
+    width: 100%;
+    padding: 2%;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+#primeralinea {
+    background-color: rgb(26, 26, 26);
+}
+#segundalinea {
+    background-color:rgb(49, 158, 242);
+}
+#terceralinea {
+    background-color:rgba(52, 198, 69, 0.92);
+}
+#cuartalinea {
+    background-color:rgb(26, 26, 26);
+}
+#quintalinea {
+    background-color:red;
+}
+
+#quintalineamod {
+    background-color:rgb(4, 0, 255);
+}
+
+
+TABLA 3
+
+#tabla3 {
+    width: 100%;
+    padding: 2%;
+    table-layout: auto;
+}
+
+
+TABLA 4
+
+#tabla4 {
+    width: 100%;
+    padding: 2%;
+    table-layout: auto;
+} -->
